@@ -1,0 +1,88 @@
+/* ./styles/globals.css */
+@font-face {
+  font-family: "MadeMirage";
+  src: local("MadeMirage"),
+    url(../public/fonts/MADEMirage-Black.otf) format("truetype");
+}
+@font-face {
+  font-family: "BaksoSapi";
+  src: local("BaksoSapi"), url(../public/fonts/BaksoSapi.otf) format("truetype");
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  :root {
+    --secondary-color: #e40e1a;
+    --third-color: #43dd39;
+    --fourth-color: #a9a8a8;
+    --fifth-color: #dd4b39;
+    --sixth-color: #838383;
+    --seventh-color: #e6e6e6;
+    --eighth-color: #b9b9b9;
+    --nineth-color: #dcdcdc;
+    --tenth-color: #969696;
+    --eleventh-color: #bf1623;
+    --twelveth-color: #1a171b;
+    --header-color: #20233e;
+    --header-border-color: #48597e;
+    --body-color: #222649;
+    --footer-color: #464646;
+    --title-color: #1a171b;
+    --input-color: #c8c8c8;
+    --main-font-family: MadeMirage, sans-serif;
+    --component-font-family: BaksoSapi, sans-serif;
+    --label-color: #5a5959;
+    --menu-color: #a7a7a7;
+  }
+
+  .main-font {
+    font-family: var(--main-font-family);
+  }
+  .component-font {
+    font-family: var(--component-font-family);
+  }
+
+  /*extra tailwind*/
+  .tracking-2 {
+    letter-spacing: 0.2em;
+  }
+  .transform-center {
+    transform: translate(-50%, 0);
+  }
+  .w-400{
+    width:400px;
+  }
+  .w-500{
+    width:500px;
+  }
+  .w-600{
+    width:600px;
+  }
+  .w-700{
+    width:700px;
+  }
+  .w-800{
+    width:800px;
+  }
+  .w-900{
+    width:900px;
+  }
+
+  /*text-rounded*/
+  .text-rounded h1 {   
+    font-size: 48px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    /* I think this works for centering? */
+    top: calc(50% - 48px);
+    -webkit-transform: translate(-50%, calc(-50% - 48px));
+    -ms-transform: translate(-50%, calc(-50% - 48px));
+    transform: translate(-50%, calc(-50% - 48px));
+  }
+  .text-rounded h1 span {
+    position: absolute;
+  }
+
+}
