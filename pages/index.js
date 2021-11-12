@@ -1,7 +1,8 @@
+import { Fragment } from "react";
 import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
+import Image from "next/image";
 import { LayoutHome } from "../src/components/layout";
-import { Fragment } from "react";
 
 export default function Home() {
   return (
@@ -22,15 +23,34 @@ export default function Home() {
                             <div className="absolute h-48 w-48 bg-blue-500 bg-opacity-50 rounded-full left-2/4 transform-center" />
                             <div className="absolute h-32 w-32 bg-blue-700 bg-opacity-50 rounded-full left-2/4 transform-center" />
                             <div className="absolute left-2/4 transform-center">
-                              <img
-                                className="w-full"
-                                src="/img/mapa.svg"
-                                alt=""
-                              />
+                              <div className="w-full h-80">
+                                <Image
+                                  src="/img/mapa.svg"
+                                  layout="fill"
+                                  alt="mapa"
+                                />
+                              </div>
                             </div>
                           </Fragment>
                         }
                       >
+                        <Tween
+                          from={{ opacity: "1", y: "0%" }}
+                          to={{ opacity: "0", y: "-300%" }}
+                        >
+                          <div
+                            className="absolute left-2/4 transform-center w-full"
+                            style={{ top: "-130px" }}
+                          >
+                             <div className="h-20">
+                                <Image
+                                  src="/img/mapade.svg"
+                                  layout="fill"
+                                  alt="mapa"
+                                />
+                              </div>
+                          </div>
+                        </Tween>
                         <Tween
                           from={{ width: "192px", height: "192px" }}
                           to={{ width: "600px", height: "600px" }}
