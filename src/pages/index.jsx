@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
 import Image from "next/image";
-import { LayoutHome } from "../src/components/layout";
+import { LayoutHome } from "../components/layout";
 
 export default function Home() {
   return (

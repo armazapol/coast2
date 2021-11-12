@@ -2,11 +2,11 @@
 @font-face {
   font-family: "MadeMirage";
   src: local("MadeMirage"),
-    url(../public/fonts/MADEMirage-Black.otf) format("truetype");
+    url(../../public/fonts/MADEMirage-Black.otf) format("truetype");
 }
 @font-face {
   font-family: "BaksoSapi";
-  src: local("BaksoSapi"), url(../public/fonts/BaksoSapi.otf) format("truetype");
+  src: local("BaksoSapi"), url(../../public/fonts/BaksoSapi.otf) format("truetype");
 }
 @tailwind base;
 @tailwind components;
