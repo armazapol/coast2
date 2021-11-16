@@ -13,13 +13,14 @@
 @tailwind utilities;
 @layer utilities {
   :root {
-    --secondary-color: #e40e1a;
-    --third-color: #43dd39;
-    --fourth-color: #a9a8a8;
-    --fifth-color: #dd4b39;
-    --sixth-color: #838383;
-    --seventh-color: #e6e6e6;
-    --eighth-color: #b9b9b9;
+    --first-color: #bbcfd2;
+    --second-color: #99beca;
+    --third-color: #044062;
+    --fourth-color: #41acd8;
+    --fifth-color: #2f88c0;
+    --sixth-color: #5fbcd6;
+    --seventh-color: #def0f0;
+    /*--eighth-color: #b9b9b9;
     --nineth-color: #dcdcdc;
     --tenth-color: #969696;
     --eleventh-color: #bf1623;
@@ -29,11 +30,9 @@
     --body-color: #222649;
     --footer-color: #464646;
     --title-color: #1a171b;
-    --input-color: #c8c8c8;
+    --input-color: #c8c8c8; */
     --main-font-family: MadeMirage, sans-serif;
     --component-font-family: BaksoSapi, sans-serif;
-    --label-color: #5a5959;
-    --menu-color: #a7a7a7;
   }
 
   .main-font {
@@ -67,6 +66,34 @@
   }
   .w-900{
     width:900px;
+  }
+  .fixed-i{
+    position: fixed !important;
+  }
+  /*background*/
+  .bg-first-color{
+    background-color: var(--first-color);
+  }
+  .bg-second-color{
+    background-color: var(--second-color);
+  }
+  .bg-fourth-color{
+    background-color: var(--fourth-color);
+  }
+  .bg-fifth-color{
+    background-color: var(--fifth-color);
+  }
+  .bg-seventh-color{
+    background-color: var(--seventh-color);
+  }
+  .color-third-color{
+    color: var(--third-color)
+  }
+  .color-sixth-color{
+    color: var(--sixth-color)
+  }
+  .opacity{
+    opacity: 0.8;
   }
 
   /*text-rounded*/
