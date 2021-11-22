@@ -6,7 +6,8 @@
 }
 @font-face {
   font-family: "BaksoSapi";
-  src: local("BaksoSapi"), url(../../public/fonts/BaksoSapi.otf) format("truetype");
+  src: local("BaksoSapi"),
+    url(../../public/fonts/BaksoSapi.otf) format("truetype");
 }
 @tailwind base;
 @tailwind components;
@@ -20,9 +21,9 @@
     --fifth-color: #2f88c0;
     --sixth-color: #5fbcd6;
     --seventh-color: #def0f0;
-    /*--eighth-color: #b9b9b9;
-    --nineth-color: #dcdcdc;
-    --tenth-color: #969696;
+    --eigth-color: #a6d7e6;
+    --nineth-color: #ff9e9b;
+    /*--tenth-color: #969696;
     --eleventh-color: #bf1623;
     --twelveth-color: #1a171b;
     --header-color: #20233e;
@@ -49,55 +50,76 @@
   .transform-center {
     transform: translate(-50%, 0);
   }
-  .w-400{
-    width:400px;
+  .h-110{
+    height:30rem;
   }
-  .w-500{
-    width:500px;
+  .w-110{
+    width:30rem;
   }
-  .w-600{
-    width:600px;
+  .w-400 {
+    width: 400px;
   }
-  .w-700{
-    width:700px;
+  .w-500 {
+    width: 500px;
   }
-  .w-800{
-    width:800px;
+  .w-600 {
+    width: 600px;
   }
-  .w-900{
-    width:900px;
+  .w-700 {
+    width: 700px;
   }
-  .fixed-i{
+  .w-800 {
+    width: 800px;
+  }
+  .w-900 {
+    width: 900px;
+  }
+  .w-1000 {
+    width: 1000px;
+  }
+  .fixed-i {
     position: fixed !important;
   }
   /*background*/
-  .bg-first-color{
+  .bg-first-color {
     background-color: var(--first-color);
   }
-  .bg-second-color{
+  .bg-second-color {
     background-color: var(--second-color);
   }
-  .bg-fourth-color{
+  .bg-third-color {
+    background-color: var(--third-color);
+  }
+  .bg-fourth-color {
     background-color: var(--fourth-color);
   }
-  .bg-fifth-color{
+  .bg-fifth-color {
     background-color: var(--fifth-color);
   }
-  .bg-seventh-color{
+  .bg-seventh-color {
     background-color: var(--seventh-color);
   }
-  .color-third-color{
-    color: var(--third-color)
+  .bg-eigth-color {
+    background-color: var(--eigth-color);
   }
-  .color-sixth-color{
-    color: var(--sixth-color)
+  .bg-nineth-color {
+    background-color: var(--nineth-color);
   }
-  .opacity{
+  .color-third-color {
+    color: var(--third-color);
+  }
+  .color-sixth-color {
+    color: var(--sixth-color);
+  }
+  .color-nineth-color {
+    color: var(--nineth-color);
+  }
+  .opacity {
     opacity: 0.8;
   }
 
   /*text-rounded*/
-  .text-rounded h1 {   
+  .text-rounded h1 {
     font-size: 48px;
     text-align: center;
     position: absolute;
@@ -112,4 +134,73 @@
     position: absolute;
   }
 
+  /*class wave*/
+
+  .Wave {
+    /* width: 8500px; */
+    /* width: 5000px; */
+    /* width:200%; */
+    animation: wave linear 10s infinite;
+    fill: #4fc3f7;
+  }
+
+  @keyframes wave {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(-25%);
+    }
+  }
+
+  .tw-animate-bounce {
+    animation: bouncetw 1s infinite;
+  }
+
+  @keyframes bouncetw {
+    0%,
+    100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  .animate-bounce-down {
+    -webkit-animation: bounce-down 1.6s linear infinite;
+    animation: bounce-down 1.6s linear infinite;
+  }
+
+  @keyframes bounce-down {
+    25% {
+      transform: translateY(-4px);
+    }
+    50%,
+    100% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(4px);
+    }
+  }
+
+  .bubble {
+    /* width: 8500px; */
+    /* width: 5000px; */
+    /* width:200%; */
+    height:200%;
+    animation: bubble linear 10s infinite;
+  }
+
+  @keyframes bubble {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-25%);
+    }
+  }
 }

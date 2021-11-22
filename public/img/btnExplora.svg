@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="513" height="221.5" viewBox="0 0 513 221.5">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b2efe7"/>
+      <stop offset="1" stop-color="#86c9d4"/>
+    </linearGradient>
+    <filter id="Rectángulo_1610" x="0" y="0" width="513" height="221.5" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-color="#d7d1c3"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_1468" data-name="Grupo 1468" transform="translate(0.257 0.437)">
+    <g transform="matrix(1, 0, 0, 1, -0.26, -0.44)" filter="url(#Rectángulo_1610)">
+      <g id="Rectángulo_1610-2" data-name="Rectángulo 1610" transform="translate(0.5 0)" stroke="#fff" stroke-width="1" fill="url(#linear-gradient)">
+        <rect width="510" height="217" rx="108.5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="509" height="216" rx="108" fill="none"/>
+      </g>
+    </g>
+    <text id="Explora" transform="translate(252.243 141.563)" fill="#fff" font-size="81" font-family="BaksoSapi, Bakso Sapi"><tspan x="-176.702" y="0">Explora</tspan></text>
+  </g>
+</svg>
