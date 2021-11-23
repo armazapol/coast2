@@ -32,9 +32,9 @@ export default function Home() {
       <div className="">
         <Controller>
           <div>
-            <Scene triggerHook="onLeave" duration={24000} pin>
+            <Scene triggerHook="onLeave" duration={27000} pin>
               {(progress) => (
-                <div className={`h-screen ${scrollY > 24000 && "fixed-i"}`}>
+                <div className={`h-screen ${scrollY > 27000 && "fixed-i"}`}>
                   <div className="grid h-screen w-full relative">
                     <div className="grid h-screen max-h-screen w-full relative items-center justify-center animate__animated animate__fadeIn">
                       <Timeline
