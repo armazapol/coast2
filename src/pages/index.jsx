@@ -42,8 +42,8 @@ export default function Home() {
                         paused
                         target={
                           <Fragment>
-                            <div className="absolute h-48 w-48 bg-first-color opacity rounded-full left-2/4 transform-center" />
-                            <div className="absolute h-32 w-32 bg-second-color opacity rounded-full left-2/4 transform-center" />
+                            <div className="absolute h-48 w-48 bg-first-color rounded-full left-2/4 transform-center opacity-25" />
+                            <div className="absolute h-32 w-32 bg-first-color opacity-30 rounded-full left-2/4 transform-center" />
                             <div className="absolute left-2/4 transform-center ">
                               <div className="w-full h-80">
                                 <Image
@@ -124,12 +124,26 @@ export default function Home() {
                               </div>
                             </div>
                             <div
-                              className="absolute w-110 bottom-28 z-40"
+                              className="absolute w-110 h-110 bottom-20 z-40"
                               style={{ left: "140px" }}
                             >
-                              <div className="w-full h-96 ">
+                              <div className="absolute w-32 h-52 bottom-28 right-0 animate-arrowSmall">
                                 <Image
-                                  src="/img/arrowMap.svg"
+                                  src="/img/arrowSmall.svg"
+                                  layout="fill"
+                                  alt="mapa"
+                                />
+                              </div>
+                              <div className="absolute w-96 h-28 left-0 bottom-0 animate-arrowBig">
+                                <Image
+                                  src="/img/arrowBig.svg"
+                                  layout="fill"
+                                  alt="mapa"
+                                />
+                              </div>
+                              <div className="absolute w-96 h-36 top-0 animate-arrowDuo">
+                                <Image
+                                  src="/img/arrowDuo.svg"
                                   layout="fill"
                                   alt="mapa"
                                 />
@@ -158,6 +172,17 @@ export default function Home() {
                                   alt="mapa"
                                 />
                               </div>
+                            </div>
+                            <div
+                              className="absolute w-28 h-28  bottom-96 z-50 cursor-pointer"
+                              style={{ left: "360px" }}
+                            >
+                             <div className="absolute w-14 h-14 bg-tenth-color rounded-full left-2/4 top-2/4 transform-centerXY z-50 opacity-80 flex items-center justify-center ">
+                               <span className="w-14 h-14 border-white rounded-full bg-transparent border-4 radar"></span>
+                             </div>
+                              <div className="absolute w-20 h-20 bg-white rounded-full left-2/4 top-2/4 transform-centerXY"></div>
+                              <div className="absolute w-28 h-28 bg-white rounded-full opacity-50 "></div>
+                              {/* <div className="w-20 h-20 bg-white"></div> */}
                             </div>
                           </Fragment>
                         }
@@ -212,9 +237,9 @@ export default function Home() {
                           </div>
                         </Tween>
                         <Tween from={{ opacity: "0" }} to={{ opacity: "0.7" }}>
-                          <div className="absolute top-10 right-14 w-32 h-20 z-50 cursor-pointer ">
+                          <div className="absolute top-10 right-14 w-32 h-14 z-50 cursor-pointer ">
                             <Image
-                              src="/img/btnMenu.svg"
+                              src="/img/btnMenu.png"
                               layout="fill"
                               alt="mapa"
                               onClick={() => setStateMenu(!stateMenu)}
@@ -259,9 +284,9 @@ export default function Home() {
                           </div>
                         </Tween>
                         <Tween from={{ opacity: "0" }} to={{ opacity: "0.7" }}>
-                          <div className="absolute bottom-10 left-14 w-32 h-20 z-50 cursor-pointer">
+                          <div className="absolute bottom-10 left-14 w-32 h-14 z-50 cursor-pointer">
                             <Image
-                              src="/img/btnExplora.svg"
+                              src="/img/btnExplora.png"
                               layout="fill"
                               alt="mapa"
                               onClick={() => setStateExplora(!stateExplora)}
@@ -357,8 +382,8 @@ export default function Home() {
                           }
                         >
                           <Tween
-                            from={{ y: "300%", opacity: "0" }}
-                            to={{ y: "0%", opacity: "1" }}
+                            from={{ x: "300%", opacity: "0" }}
+                            to={{ x: "0%", opacity: "1" }}
                           />
                           <Tween to={{ y: "-300%", opacity: "0" }} />
                         </Timeline>
@@ -397,8 +422,8 @@ export default function Home() {
                           }
                         >
                           <Tween
-                            from={{ y: "300%", opacity: "0" }}
-                            to={{ y: "0%", opacity: "1" }}
+                            from={{ x: "-300%", opacity: "0" }}
+                            to={{ x: "0%", opacity: "1" }}
                           />
                           <Tween to={{ y: "-300%", opacity: "0" }} />
                         </Timeline>
@@ -431,8 +456,8 @@ export default function Home() {
                           }
                         >
                           <Tween
-                            from={{ y: "300%", opacity: "0" }}
-                            to={{ y: "0%", opacity: "1" }}
+                            from={{ scale: "0", opacity: "0" }}
+                            to={{ scale: "1", opacity: "1" }}
                           />
                           <Tween to={{ y: "-300%", opacity: "0" }} />
                         </Timeline>
@@ -468,8 +493,8 @@ export default function Home() {
                           }
                         >
                           <Tween
-                            from={{ y: "300%", opacity: "0" }}
-                            to={{ y: "0%", opacity: "1" }}
+                            from={{x: "300%", rotation: 180, opacity: "0" }}
+                            to={{x: "0%", rotation: 360, opacity: "1" }}
                           />
                           <Tween to={{ y: "-300%", opacity: "0" }} />
                         </Timeline>
@@ -603,8 +628,8 @@ export default function Home() {
                           }
                         >
                           <Tween
-                            from={{ y: "300%", opacity: "0" }}
-                            to={{ y: "0%", opacity: "1" }}
+                            from={{ x: "300%", opacity: "0" }}
+                            to={{ x: "0%", opacity: "1" }}
                           />
                           <Tween to={{ y: "-300%", opacity: "0" }} />
                         </Timeline>
@@ -629,8 +654,8 @@ export default function Home() {
                           }
                         >
                           <Tween
-                            from={{ y: "300%", opacity: "0" }}
-                            to={{ y: "0%", opacity: "1" }}
+                            from={{ x: "-300%", opacity: "0" }}
+                            to={{ x: "0%", opacity: "1" }}
                           />
                           <Tween to={{ y: "-300%", opacity: "0" }} />
                         </Timeline>
@@ -643,10 +668,10 @@ export default function Home() {
                           to={{ opacity: "1" }}
                           target={11}
                         />
-                       
+
                         <Tween
-                          from={{ opacity: "0" }}
-                          to={{ opacity: "1" }}
+                          from={{ opacity: "0", x: "-50%" }}
+                          to={{ opacity: "1", x: "0%" }}
                           target={10}
                         />
                         <Timeline
@@ -670,8 +695,8 @@ export default function Home() {
                           }
                         >
                           <Tween
-                            from={{ y: "300%", opacity: "0" }}
-                            to={{ y: "0%", opacity: "1" }}
+                            from={{rotation:180, x: "300%", opacity: "0" }}
+                            to={{rotation:360, x: "0%", opacity: "1" }}
                           />
                           <Tween to={{ y: "-300%", opacity: "0" }} />
                         </Timeline>
@@ -679,15 +704,20 @@ export default function Home() {
                         <Tween
                           to={{ scale: "2.3", x: "-85%", y: "-10%" }}
                           target={11}
-                        />             
+                        />
                         <Tween
                           to={{ scale: "9", x: "-250%", y: "-40%" }}
                           target={9}
                         />
-                         <Tween
+                        <Tween
                           from={{ opacity: "0" }}
                           to={{ opacity: "1" }}
                           target={12}
+                        />
+                        <Tween
+                          from={{ opacity: "0" }}
+                          to={{ opacity: "1" }}
+                          target={13}
                         />
                         <Timeline
                           target={
@@ -705,8 +735,8 @@ export default function Home() {
                           }
                         >
                           <Tween
-                            from={{ y: "300%", opacity: "0" }}
-                            to={{ y: "0%", opacity: "1" }}
+                            from={{ scale:0 , opacity: "0" }}
+                            to={{ scale:1, opacity: "1" }}
                           />
                           {/* <Tween to={{ y: "-300%", opacity: "0" }} /> */}
                         </Timeline>

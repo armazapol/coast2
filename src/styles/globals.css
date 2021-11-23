@@ -14,7 +14,8 @@
 @tailwind utilities;
 @layer utilities {
   :root {
-    --first-color: #bbcfd2;
+    /* --first-color: #bbcfd2; */
+    --first-color: #42acd9;
     --second-color: #99beca;
     --third-color: #044062;
     --fourth-color: #41acd8;
@@ -23,8 +24,8 @@
     --seventh-color: #def0f0;
     --eigth-color: #a6d7e6;
     --nineth-color: #ff9e9b;
-    /*--tenth-color: #969696;
-    --eleventh-color: #bf1623;
+    --tenth-color: #7cf8fa;
+    /*--eleventh-color: #bf1623;
     --twelveth-color: #1a171b;
     --header-color: #20233e;
     --header-border-color: #48597e;
@@ -50,11 +51,14 @@
   .transform-center {
     transform: translate(-50%, 0);
   }
-  .h-110{
-    height:30rem;
+  .transform-centerXY {
+    transform: translate(-50%, -50%);
   }
-  .w-110{
-    width:30rem;
+  .h-110 {
+    height: 30rem;
+  }
+  .w-110 {
+    width: 30rem;
   }
   .w-400 {
     width: 400px;
@@ -104,6 +108,9 @@
   }
   .bg-nineth-color {
     background-color: var(--nineth-color);
+  }
+  .bg-tenth-color {
+    background-color: var(--tenth-color);
   }
   .color-third-color {
     color: var(--third-color);
@@ -191,7 +198,7 @@
     /* width: 8500px; */
     /* width: 5000px; */
     /* width:200%; */
-    height:200%;
+    height: 200%;
     animation: bubble linear 10s infinite;
   }
 
@@ -201,6 +208,58 @@
     }
     100% {
       transform: translateY(-25%);
+    }
+  }
+
+  .animate-arrowDuo {
+    animation: arrowDuo 5s infinite;
+    animation-delay: 2s;
+  }
+  @keyframes arrowDuo {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-arrowBig {
+    animation: arrowBig 5s infinite;
+    animation-delay: 1s;
+  }
+  @keyframes arrowBig {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-arrowSmall {
+    animation: arrowSmall 5s infinite;
+    animation-delay: 1.5s;
+  }
+  @keyframes arrowSmall {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .radar{
+    transform:scale(0);
+    animation:radar 1.2s ease-in 0s infinite;
+  }
+  @keyframes radar {
+    from{
+      transform:scale(0);
+    }
+    to{
+      transform:scale(1);
     }
   }
 }
